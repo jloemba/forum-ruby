@@ -1,14 +1,19 @@
 class Api::V1::ArticlesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_article, only: [:show, :update, :destroy]
   # GET /articles
   def index
     @articles = Article.all
     render json: @articles
   end
+
+
   # GET /articles/1
   def show
     render json: @article
   end
+
+
   # POST /articles
   def create
     @article = Article.new(article_params)
