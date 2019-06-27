@@ -6,7 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 #Article.create(title: 'Hello world',content: 'lorem ipso',slug: 'hello-world')
-User.create(firstname:'Joris',lastname:'Loemba',mail:'jorisloemna@gmail.com')
-User.create(firstname:'Daniel',lastname:'Kulaya',mail:'getout@gmail.com')
-User.create(firstname:'Micheal',lastname:'B. Jordan',mail:'killmongera@gmail.com')
-User.create(firstname:'Zion',lastname:'williamson',mail:'z.williamson@gmail.com')
+#User.create(firstname:'Joris',lastname:'Loemba',mail:'jorisloemna@gmail.com')
+#User.create(firstname:'Daniel',lastname:'Kulaya',mail:'getout@gmail.com')
+#User.create(firstname:'Micheal',lastname:'B. Jordan',mail:'killmongera@gmail.com')
+#User.create(firstname:'Zion',lastname:'williamson',mail:'z.williamson@gmail.com')
+
+Comment.create(content:'Ce tuto est génial')
+Comment.create(content:'J\'apprends à coder en ruby ')
+Comment.create(content:'Python est pas mal aussi')
+
