@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2019_06_27_160315) do
     t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "users_id"
+    t.index ["users_id"], name: "index_articles_on_users_id"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -32,6 +34,8 @@ ActiveRecord::Schema.define(version: 2019_06_27_160315) do
     t.string "lastname"
     t.string "firstname"
     t.string "mail"
+    t.string "token"
+    t.string "password"
   end
 
 end

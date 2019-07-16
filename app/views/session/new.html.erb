@@ -1,8 +1,8 @@
 <h1>Identification</h1>
 
-<%= form_for(:session, :url => sessions_path) do |f| %>
+<%= form_for(:session, :url => articles_url) do |f| %>
   <div class="field">
-    <%= f.label :email, "eMail" %><br />
+    <%= f.label :email, "E-mail" %><br />
     <%= f.text_field :email %>
   </div>
   <div class="field">

@@ -10,8 +10,10 @@
 #User.create(firstname:'Daniel',lastname:'Kulaya',mail:'getout@gmail.com')
 #User.create(firstname:'Micheal',lastname:'B. Jordan',mail:'killmongera@gmail.com')
 #User.create(firstname:'Zion',lastname:'williamson',mail:'z.williamson@gmail.com')
-
-Comment.create(content:'Ce tuto est génial')
-Comment.create(content:'J\'apprends à coder en ruby ')
-Comment.create(content:'Python est pas mal aussi')
+#Users.destroy_all
+Users.create(firstname: 'kobe',lastname:'bryant', mail: 'bugs@rubyplus.com', password: '123456')
+Users.create(firstname: 'zion',lastname:'wiil', mail: 'zion@rubyplus.com', password: '123456')
+#Comment.create(content:'Ce tuto est génial')
+#Comment.create(content:'J\'apprends à coder en ruby ')
+#Comment.create(content:'Python est pas mal aussi')
 
