@@ -2,9 +2,16 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
-  get 'article/index'
-  get 'article/edit'
+  resources :users
+  resources :articles
 
+  resources :sessions, :only => [:new, :create, :destroy]
+
+  get '/signup', to: 'users#new'
+  get '/signin', to: 'sessions#new'
+  get '/signout', to: 'sessions#destroy'
+
+#Partie API du projet
   namespace :api do
     namespace :v1 do
       resources :articles
