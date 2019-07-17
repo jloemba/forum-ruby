@@ -1,0 +1,14 @@
+[	
+	{
+	 "content":"J'ai réussi à faire une api ruby-on-rails avec Louis avec Albert.",
+     "articles_id":1
+    },
+	{
+     "content":"On a pu faire un front-end avec ReactJS.",
+     "articles_id":1
+    },
+    {
+     "content":"Je n'arrive à installer GraphQL.",
+     "articles_id":6
+    }
+]
